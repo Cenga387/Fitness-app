@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:fitness_app/pages/profile_page.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 
@@ -65,12 +66,13 @@ class _RegistrationPageState extends State<RegPage> {
                       TextFormField(
                         controller: _nameController,
                         decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color.fromARGB(255, 182, 182, 182),
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(17.0)),
-                          labelText: 'Full Name',
-                        ),
+                            filled: true,
+                            fillColor: Colors.grey,
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(17.0)),
+                            labelText: 'Full Name',
+                            labelStyle:
+                                TextStyle(color: Colors.black, fontSize: 18)),
                         validator: (value) {
                           if (value?.isEmpty ?? true) {
                             return 'Please enter your name';
@@ -82,12 +84,13 @@ class _RegistrationPageState extends State<RegPage> {
                       TextFormField(
                         controller: _emailController,
                         decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color.fromARGB(255, 182, 182, 182),
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(17.0)),
-                          labelText: 'Email',
-                        ),
+                            filled: true,
+                            fillColor: Colors.grey,
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(17.0)),
+                            labelText: 'Email',
+                            labelStyle:
+                                TextStyle(color: Colors.black, fontSize: 18)),
                         validator: (value) {
                           if (value?.isEmpty ?? true) {
                             return 'Please enter your email';
@@ -100,12 +103,13 @@ class _RegistrationPageState extends State<RegPage> {
                       TextFormField(
                         controller: _passwordController,
                         decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color.fromARGB(255, 182, 182, 182),
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(17.0)),
-                          labelText: 'Password',
-                        ),
+                            filled: true,
+                            fillColor: Colors.grey,
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(17.0)),
+                            labelText: 'Password',
+                            labelStyle:
+                                TextStyle(color: Colors.black, fontSize: 18)),
                         obscureText: true,
                         validator: (value) {
                           if (value?.isEmpty ?? true) {
@@ -119,12 +123,13 @@ class _RegistrationPageState extends State<RegPage> {
                       TextFormField(
                         controller: _weightController,
                         decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color.fromARGB(255, 182, 182, 182),
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(17.0)),
-                          labelText: 'Weight (kg)',
-                        ),
+                            filled: true,
+                            fillColor: Colors.grey,
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(17.0)),
+                            labelText: 'Weight (kg)',
+                            labelStyle:
+                                TextStyle(color: Colors.black, fontSize: 18)),
                         keyboardType: TextInputType.number,
                         validator: (value) {
                           if (value?.isEmpty ?? true) {
@@ -141,12 +146,13 @@ class _RegistrationPageState extends State<RegPage> {
                       TextFormField(
                         controller: _heightController,
                         decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color.fromARGB(255, 182, 182, 182),
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(17.0)),
-                          labelText: 'Height (cm)',
-                        ),
+                            filled: true,
+                            fillColor: Colors.grey,
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(17.0)),
+                            labelText: 'Height (cm)',
+                            labelStyle:
+                                TextStyle(color: Colors.black, fontSize: 18)),
                         keyboardType: TextInputType.number,
                         validator: (value) {
                           if (value?.isEmpty ?? true) {
@@ -163,12 +169,13 @@ class _RegistrationPageState extends State<RegPage> {
                       TextFormField(
                         controller: _dobController,
                         decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color.fromARGB(255, 182, 182, 182),
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(17.0)),
-                          labelText: 'Date of Birth',
-                        ),
+                            filled: true,
+                            fillColor: Colors.grey,
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(17.0)),
+                            labelText: 'Date of Birth',
+                            labelStyle:
+                                TextStyle(color: Colors.black, fontSize: 18)),
                         onTap: () async {
                           // Display date picker when the text field is tapped
                           final selectedDate = await showDatePicker(
@@ -214,12 +221,13 @@ class _RegistrationPageState extends State<RegPage> {
                                 ))
                             .toList(),
                         decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color.fromARGB(255, 182, 182, 182),
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(17.0)),
-                          labelText: 'Gender',
-                        ),
+                            filled: true,
+                            fillColor: Colors.grey,
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(17.0)),
+                            labelText: 'Gender',
+                            labelStyle:
+                                TextStyle(color: Colors.black, fontSize: 18)),
                         onChanged: (value) {
                           setState(() {
                             _selectedGender = value;
@@ -245,11 +253,11 @@ class _RegistrationPageState extends State<RegPage> {
                     fixedSize: Size(double.infinity, 70),
                   ),
                   onPressed: () {
-                    if (_formKey.currentState?.validate() == true) {
-                      // Form is valid, process registration logic here
-                      // You can access the entered values using _nameController.text, _emailController.text, _passwordController.text
-                      // Perform registration logic or call a registration API
-                    }
+                    if (_formKey.currentState?.validate() == true) {}
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ProfileScreen()),
+                    );
                   },
                   child: Text(
                     'Skip Registration(demo)',
