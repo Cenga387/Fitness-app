@@ -1,5 +1,6 @@
 import 'dart:ui';
-import 'package:fitness_app/pages/profile_page.dart';
+import 'package:fitness_app/pages/home_page.dart';
+
 import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 
@@ -50,7 +51,7 @@ class _RegistrationPageState extends State<RegPage> {
                     'Please tell us about yourself',
                     style: TextStyle(
                       fontSize: 20,
-                      fontWeight: FontWeight.w100,
+                      fontWeight: FontWeight.w300,
                       color: const Color.fromARGB(255, 149, 112, 0),
                     ),
                     textAlign: TextAlign.center,
@@ -256,7 +257,7 @@ class _RegistrationPageState extends State<RegPage> {
                     if (_formKey.currentState?.validate() == true) {}
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => ProfileScreen()),
+                      MaterialPageRoute(builder: (context) => HomePage()),
                     );
                   },
                   child: Text(

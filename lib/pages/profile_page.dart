@@ -1,3 +1,5 @@
+import 'package:fitness_app/pages/challenges_list_page.dart';
+import 'package:fitness_app/pages/home_page.dart';
 import 'package:fitness_app/pages/welcome_page.dart';
 import 'package:flutter/material.dart';
 import 'reg_page.dart';
@@ -46,7 +48,12 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
     });
     if (index == 0) {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => RegPage()));
+          context, MaterialPageRoute(builder: (context) => HomePage()));
+    } else if (index == 1) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => ChallengeListScreen()),
+      );
     } else if (index == 2) {
       Navigator.pushReplacement(
         context,
@@ -85,6 +92,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           child: Text(
             'Profile',
             style: TextStyle(
+              fontSize: 25,
               color: Color.fromARGB(255, 194, 146, 0),
             ),
           ),
