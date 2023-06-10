@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "609700397540",
+    "firebase_url": "https://fitquest-51617-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "fitquest-51617",
+    "storage_bucket": "fitquest-51617.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609700397540:android:b9fc37c80c87b4fbe687f1",
+        "android_client_info": {
+          "package_name": "com.example.fitness_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "609700397540-v4hpg21qb4sl91gruck2i5np48b4omkg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByL2fGyxkF23hg2FTTqPG47EATH0th4gE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "609700397540-v4hpg21qb4sl91gruck2i5np48b4omkg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
