@@ -1,3 +1,4 @@
+import 'package:fitness_app/pages/challenge_card.dart';
 import 'package:fitness_app/pages/home_page.dart';
 import 'package:fitness_app/pages/profile_page.dart';
 import 'package:fitness_app/pages/reg_page.dart';
@@ -204,7 +205,10 @@ class ChallengeCard extends StatelessWidget {
                   alignment: Alignment.bottomLeft,
                   child: ElevatedButton(
                     onPressed: () {
-                      // Handle "View challenge" button press
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => WorkoutPage()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         fixedSize: Size(150, 40),
