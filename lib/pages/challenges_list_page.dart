@@ -106,8 +106,7 @@ class ChallengeListScreen extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0)),
                 context: context,
-                position: RelativeRect.fromLTRB(
-                    100, 80, 0, 0), // Adjust the position as needed
+                position: RelativeRect.fromLTRB(100, 80, 0, 0),
                 items: [
                   PopupMenuItem(
                     child: ListTile(
@@ -120,8 +119,7 @@ class ChallengeListScreen extends StatelessWidget {
                         style: TextStyle(color: Colors.black, fontSize: 18.0),
                       ),
                       onTap: () {
-                        // Handle Settings button press
-                        Navigator.pop(context); // Close the sliding menu
+                        Navigator.pop(context);
                       },
                     ),
                   ),
@@ -223,10 +221,10 @@ class ChallengeCard extends StatelessWidget {
           ),
           Positioned.fill(
             child: FractionallySizedBox(
-              widthFactor: 0.4, // Adjust the width factor as needed
+              widthFactor: 0.4,
               alignment: Alignment.topRight,
               child: Padding(
-                padding: EdgeInsets.all(8.0), // Adjust the padding as needed
+                padding: EdgeInsets.all(8.0),
                 child: Image.asset(
                   'assets/images/girlOnBike.png',
                   fit: BoxFit.cover,

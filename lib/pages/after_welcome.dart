@@ -12,7 +12,7 @@ class AfterWelcome extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/images/guyRunning.png', // Replace with your image asset path
+                'assets/images/guyRunning.png',
               ),
               Text(
                 'FITQUEST',

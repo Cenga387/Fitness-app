@@ -118,7 +118,7 @@ class _HomePageState extends State<HomePage> {
             timePickerTheme: TimePickerThemeData(backgroundColor: Colors.grey),
             colorScheme: ColorScheme.light(
               secondary: Colors.grey,
-              primary: Color.fromARGB(255, 0, 70, 3), // Dark green accent color
+              primary: Color.fromARGB(255, 0, 70, 3),
             ),
             textTheme: TextTheme(
               labelSmall: TextStyle(
@@ -257,8 +257,7 @@ class _HomePageState extends State<HomePage> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0)),
                 context: context,
-                position: RelativeRect.fromLTRB(
-                    100, 80, 0, 0), // Adjust the position as needed
+                position: RelativeRect.fromLTRB(100, 80, 0, 0),
                 items: [
                   PopupMenuItem(
                     child: ListTile(
@@ -271,8 +270,7 @@ class _HomePageState extends State<HomePage> {
                         style: TextStyle(color: Colors.black, fontSize: 18.0),
                       ),
                       onTap: () {
-                        // Handle Settings button press
-                        Navigator.pop(context); // Close the sliding menu
+                        Navigator.pop(context);
                       },
                     ),
                   ),
@@ -323,7 +321,7 @@ class _HomePageState extends State<HomePage> {
                 subtitle: Text('$foodIntake/1800 kcal',
                     style: TextStyle(
                       fontSize: 25.0,
-                      color: Colors.black, // Change the text color here
+                      color: Colors.black,
                     )),
                 trailing: ElevatedButton(
                   style: ElevatedButton.styleFrom(
@@ -376,19 +374,19 @@ class _HomePageState extends State<HomePage> {
                     style: ElevatedButton.styleFrom(
                       fixedSize: Size(40, 40),
                       shape: CircleBorder(),
-                      backgroundColor: Color.fromARGB(255, 0, 70, 3),
+                      primary: Color.fromARGB(255, 0, 70, 3),
                     ),
-                    onPressed: incrementWater,
-                    child: Text(style: TextStyle(fontSize: 20), '+'),
+                    onPressed: decrementWater,
+                    child: Text(style: TextStyle(fontSize: 30), '-'),
                   ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       fixedSize: Size(40, 40),
                       shape: CircleBorder(),
-                      primary: Color.fromARGB(255, 0, 70, 3),
+                      backgroundColor: Color.fromARGB(255, 0, 70, 3),
                     ),
-                    onPressed: decrementWater,
-                    child: Text(style: TextStyle(fontSize: 30), '-'),
+                    onPressed: incrementWater,
+                    child: Text(style: TextStyle(fontSize: 20), '+'),
                   ),
                 ],
               ),

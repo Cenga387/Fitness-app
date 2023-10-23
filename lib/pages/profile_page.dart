@@ -109,8 +109,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0)),
                 context: context,
-                position: RelativeRect.fromLTRB(
-                    100, 80, 0, 0), // Adjust the position as needed
+                position: RelativeRect.fromLTRB(100, 80, 0, 0),
                 items: [
                   PopupMenuItem(
                     child: ListTile(
@@ -123,8 +122,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         style: TextStyle(color: Colors.black, fontSize: 18.0),
                       ),
                       onTap: () {
-                        // Handle Settings button press
-                        Navigator.pop(context); // Close the sliding menu
+                        Navigator.pop(context);
                       },
                     ),
                   ),
@@ -177,9 +175,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             SizedBox(height: 8.0),
             ElevatedButton(
               child: Text('Edit'),
-              onPressed: () {
-                // Handle edit button press
-              },
+              onPressed: () {},
               style: ElevatedButton.styleFrom(
                   fixedSize: Size(150, 40),
                   shape: RoundedRectangleBorder(
@@ -265,66 +261,54 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ),
                   SizedBox(height: 16.0),
                   InkWell(
-                    onTap: () {
-                      // Handle Personal Data click
-                    },
+                    onTap: () {},
                     child: Row(
                       children: [
-                        Icon(Icons.person), // Replace with desired icon
+                        Icon(Icons.person),
                         SizedBox(width: 8.0),
                         Text('Personal Data', style: TextStyle(fontSize: 18.0)),
                         Spacer(),
-                        Icon(Icons
-                            .arrow_forward_ios), // Replace with desired icon
+                        Icon(Icons.arrow_forward_ios),
                       ],
                     ),
                   ),
                   SizedBox(height: 12.0),
                   InkWell(
-                    onTap: () {
-                      // Handle Achievements click
-                    },
+                    onTap: () {},
                     child: Row(
                       children: [
-                        Icon(Icons.star), // Replace with desired icon
+                        Icon(Icons.star),
                         SizedBox(width: 8.0),
                         Text('Achievements', style: TextStyle(fontSize: 18.0)),
                         Spacer(),
-                        Icon(Icons
-                            .arrow_forward_ios), // Replace with desired icon
+                        Icon(Icons.arrow_forward_ios),
                       ],
                     ),
                   ),
                   SizedBox(height: 12.0),
                   InkWell(
-                    onTap: () {
-                      // Handle Activity click
-                    },
+                    onTap: () {},
                     child: Row(
                       children: [
-                        Icon(Icons.directions_run), // Replace with desired icon
+                        Icon(Icons.directions_run),
                         SizedBox(width: 8.0),
                         Text('Activity', style: TextStyle(fontSize: 18.0)),
                         Spacer(),
-                        Icon(Icons
-                            .arrow_forward_ios), // Replace with desired icon
+                        Icon(Icons.arrow_forward_ios),
                       ],
                     ),
                   ),
                   SizedBox(height: 12.0),
                   InkWell(
-                    onTap: () {
-                      // Handle Workout Progress click
-                    },
+                    onTap: () {},
                     child: Row(
                       children: [
-                        Icon(Icons.fitness_center), // Replace with desired icon
+                        Icon(Icons.fitness_center),
                         SizedBox(width: 8.0),
                         Text('Workout Progress',
                             style: TextStyle(fontSize: 18.0)),
                         Spacer(),
-                        Icon(Icons
-                            .arrow_forward_ios), // Replace with desired icon
+                        Icon(Icons.arrow_forward_ios),
                       ],
                     ),
                   ),

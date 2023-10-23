@@ -96,7 +96,7 @@ class _RegistrationPageState extends State<RegPage> {
                           if (value?.isEmpty ?? true) {
                             return 'Please enter your email';
                           }
-                          // Add additional email validation logic if needed
+
                           return null;
                         },
                       ),
@@ -116,7 +116,7 @@ class _RegistrationPageState extends State<RegPage> {
                           if (value?.isEmpty ?? true) {
                             return 'Please enter a password';
                           }
-                          // Add additional password validation logic if needed
+
                           return null;
                         },
                       ),
@@ -178,7 +178,6 @@ class _RegistrationPageState extends State<RegPage> {
                             labelStyle:
                                 TextStyle(color: Colors.black, fontSize: 18)),
                         onTap: () async {
-                          // Display date picker when the text field is tapped
                           final selectedDate = await showDatePicker(
                             context: context,
                             initialDate: DateTime.now(),
@@ -189,7 +188,6 @@ class _RegistrationPageState extends State<RegPage> {
                           if (selectedDate != null) {
                             final dateFormatter = DateFormat('yyyy-MM-dd');
 
-                            // Update the date of birth field with the selected date
                             setState(() {
                               _dobController.text =
                                   dateFormatter.format(selectedDate);

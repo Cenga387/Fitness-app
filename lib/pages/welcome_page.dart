@@ -11,7 +11,7 @@ class WelcomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/images/welcome.png', // Replace with your image asset path
+                'assets/images/welcome.png',
               ),
               SizedBox(height: 20),
               Text(
