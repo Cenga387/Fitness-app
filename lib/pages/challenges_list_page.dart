@@ -72,7 +72,6 @@ class ChallengeListScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
-        elevation: 0,
         leading: IconButton(
           icon: Icon(
             Icons.arrow_back,
@@ -98,7 +97,7 @@ class ChallengeListScreen extends StatelessWidget {
           IconButton(
             icon: Icon(
               Icons.menu,
-              color: Color.fromARGB(255, 194, 146, 0),
+              color: Color.fromARGB(34, 94, 82, 4),
             ), // Hamburger menu icon
             onPressed: () {
               showMenu(

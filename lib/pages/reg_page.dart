@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:fitness_app/pages/home_page.dart';
 
-import 'package:intl/intl.dart';
+// import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 
 class RegPage extends StatefulWidget {
@@ -186,11 +186,13 @@ class _RegistrationPageState extends State<RegPage> {
                           );
 
                           if (selectedDate != null) {
-                            final dateFormatter = DateFormat('yyyy-MM-dd');
-
+                            // final dateFormatter =
+                            //     DateFormat.EEEE().format(DateTime.now());
+                            // final String date =
+                            //     DateFormat.EEEE().format(DateTime.now());
                             setState(() {
-                              _dobController.text =
-                                  dateFormatter.format(selectedDate);
+                              // _dobController.text =
+                              //     dateFormatter.format(selectedDate);
                             });
                           }
                         },
